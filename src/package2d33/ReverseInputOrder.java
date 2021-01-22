@@ -15,7 +15,8 @@ public class ReverseInputOrder {
         // tried line != null, but i don't know when it becomes null, it just carried
         // on forever
         String line = br.readLine();
-        while (!line.isEmpty()) {
+        // !line.isEmpty()
+        while (line != null) {
             inputs.push(line);
             line = br.readLine();
         }
