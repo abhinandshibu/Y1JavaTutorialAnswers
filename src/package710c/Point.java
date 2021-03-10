@@ -1,4 +1,4 @@
-package package5235;
+package package710c;
 
 import java.util.Objects;
 
@@ -59,6 +59,11 @@ public class Point {
         return x == point.x &&
                 y == point.y &&
                 z == point.z;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y, z);
     }
 
 }

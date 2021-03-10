@@ -1,4 +1,4 @@
-package package5235;
+package package710c;
 
 import java.util.Objects;
 
@@ -25,4 +25,8 @@ public class ColouredPoint extends Point {
         return Objects.equals(colour, that.colour);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), colour);
+    }
 }
